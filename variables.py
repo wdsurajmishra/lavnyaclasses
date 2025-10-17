@@ -6,6 +6,8 @@
 first_name = "John"
 
 
+
+
 def print_name():
     print(first_name)
 
