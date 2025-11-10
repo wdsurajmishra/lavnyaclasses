@@ -1,7 +1,7 @@
 import pyfiglet
 
-result = pyfiglet.figlet_format("Calculator")
-print(result)
+# result = pyfiglet.figlet_format("Calculator")
+# print(result)
 
 msg = """
 Select operation:
