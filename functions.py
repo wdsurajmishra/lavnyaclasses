@@ -1,31 +1,62 @@
 
 
-def add_numbers(a, b):
-    """Returns the sum of two numbers."""
-    return a + b
+# def add_numbers(a, b):
+#     """Returns the sum of two numbers."""
+#     return a + b
 
-# result = add_numbers(10, 25)
-# print("The sum is:", result)
-
-
-def upper_case_convertor(txt):
-    """Converts a string to uppercase."""
-    return txt.upper()
+# # result = add_numbers(10, 25)
+# # print("The sum is:", result)
 
 
-converted_text = upper_case_convertor("hello world")
-# print("Converted Text:", converted_text)
+# def upper_case_convertor(txt):
+#     """Converts a string to uppercase."""
+#     return txt.upper()
 
 
-def greet(name):
-    """Returns a greeting message for the given name."""
-    return f"Hello, {name}!"
+# converted_text = upper_case_convertor("hello world")
+# # print("Converted Text:", converted_text)
 
 
-greet_list = [
-    'Suraj', 'Aditya', 'Rohan', 'Sahil', 'Ankit'
-]
+# def greet(name):
+#     """Returns a greeting message for the given name."""
+#     return f"Hello, {name}!"
 
-for person in greet_list:
-    message = greet(person)
-    print(message)
+
+# greet_list = [
+#     'Suraj', 'Aditya', 'Rohan', 'Sahil', 'Ankit'
+# ]
+
+# for person in greet_list:
+#     message = greet(person)
+#     print(message)
+
+
+
+def print_car_details(name, *colors, **specs):
+    """Prints the car name and its available colors."""
+    print(f"Car Name: {name}")
+    print("Specifications:")
+
+    for spec, value in specs.items():
+        print(f"{spec}: {value}")
+
+    print("Available Colors:")
+    for color in colors:
+        print(color)
+
+# print_car_details("Car", "Red", "Blue", "Green", "Black", isAutomatic=True, year=2020)
+
+
+
+
+def calculate_mutiple_numbers(*args):
+    """Calculates the product of multiple numbers."""
+    count = 0
+    for num in args:
+        count += num
+    return count
+
+print(calculate_mutiple_numbers(2, 3, 4, 5))
+
+
+
