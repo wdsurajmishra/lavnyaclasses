@@ -39,3 +39,23 @@ print(student.introduce())
 
 teacher = Teacher("Mr. Smith", 45, "Mathematics")
 print(teacher.introduce())
+
+print(student.name)
+
+
+class New:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.__age = age  # Private attribute
+
+
+    def introduce(self):
+        return f"Hello, my name is {self.name} and I am {self.__age} years old."    
+    
+    def get_age(self):
+        return self.__age
+
+new_person = New("Price", 30)
+
+print(new_person.get_age())  # Accessing private attribute via getter method
